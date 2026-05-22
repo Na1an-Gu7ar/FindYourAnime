@@ -16,7 +16,10 @@ app.use(
   cors({
     origin: [
       env.clientUrl,
-      "https://find-your-anime-client.vercel.app/"
+      "https://find-your-anime-client.vercel.app",
+      "find-your-anime-client-nayan-gujars-projects.vercel.app",
+      "https://find-your-anime-client-lr4xv59o2-nayan-gujars-projects.vercel.app"
+      // "https://find-your-anime-client.vercel.app/"
     ],
     credentials: true
   })
