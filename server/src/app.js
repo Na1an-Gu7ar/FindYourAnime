@@ -14,7 +14,10 @@ const app = express();
 app.use(helmet());
 app.use(
   cors({
-    origin: env.clientUrl,
+    origin: [
+      env.clientUrl,
+      "https://find-your-anime-client.vercel.app/"
+    ],
     credentials: true
   })
 );
